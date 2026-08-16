@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 from utils import normalize_age, age_group
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent
 DATA_FILE = PROJECT_ROOT / "data" / "bisoprolol.xlsx"
 
 

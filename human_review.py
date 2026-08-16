@@ -2,9 +2,8 @@ import json
 import sys
 from pathlib import Path
 
-QUEUE_FILE = Path(__file__).resolve().parent.parent / "review_queue.json"
 
-
+QUEUE_FILE = Path(__file__).resolve().parent / "review_queue.json"
 def load_queue():
     if QUEUE_FILE.exists():
         return json.loads(QUEUE_FILE.read_text())

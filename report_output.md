@@ -14,23 +14,25 @@
 
 ## 2. Narrative Summary and Analysis
 
-During the reporting period of 2024-12-27 to 2025-12-26, 1,024 cases involving Bisoprolol were received, of which 1,023 (99.9%) were classified as serious and 1 (0.1%) as non-serious.
+During the reporting period from 2024‑12‑27 to 2025‑12‑26, a total of 1,024 cases were received, of which 1,023 (99.9 %) were classified as serious and 1 (0.1 %) as non‑serious. The most frequently reported reactions across all cases were acute kidney injury (80 reports), drug ineffective (54), hypotension (46), drug interaction (42) and dyspnoea (38). Among the serious cases, the same reactions predominated, with acute kidney injury (80), drug ineffective (53), hypotension (46), drug interaction (42) and dyspnoea (38) constituting the top five reported serious events.
 
-The most frequently reported reactions overall were Acute kidney injury (80 cases), Drug ineffective (54 cases), Hypotension (46 cases), Drug interaction (42 cases), and Dyspnoea (38 cases). Among serious cases specifically, the same five reactions led, with Drug ineffective at 53 of its 54 reports being serious.
+Outcome information was available for multiple dimensions. Reported outcomes included recovered/resolved (1,280), unknown (1,033), not recovered/not resolved/ongoing (536), recovering/resolving (406), fatal (134) and recovered/resolved with sequelae (34). These figures reflect the status of cases at the time of reporting.
 
-Reported outcomes were: recovered/resolved (1,280), unknown (1,033), not recovered/ongoing (536), recovering/resolving (406), fatal (134), and recovered with sequelae (34). The case population was close to evenly split by sex (503 female, 493 male, 28 unknown) and skewed toward older patients (674 aged 65+, 218 aged 41-64). The leading reporting sources were the EU region (342), United Kingdom (278), and France (185).
+The case population was primarily comprised of patients aged 65 years or older (674 cases, 66 %) followed by those aged 41‑64 years (218), with smaller numbers in younger age groups (18‑40 years: 30; 0‑17 years: 16) and an unknown age category (86). Sex distribution was balanced, with 503 (49 %) female, 493 (48 %) male and 28 (3 %) unknown. Geographically, reports originated from 24 distinct regions, the largest contributions being from the European Union (342), the United Kingdom (278) and France (185). Additional reports were received from Canada (55), Italy (51), Germany (33), Spain (24), Poland (18) and a range of other countries each contributing fewer than ten cases.
 
 ## 3. Summary Analysis of Cases
 
-The dataset comprises 1,024 unique cases after deduplicating resubmitted case versions, of which 1,023 (99.9%) were serious and 1 non-serious.
+A total of 1,024 cases were reported during the reporting period, of which 1,023 were classified as serious and one as non‑serious. The age distribution of the reported cases was dominated by patients aged 65 years and older (674 cases). The next most frequent age groups were 41–64 years (218 cases), 18–40 years (30 cases), and 0–17 years (16 cases); age was unknown for 86 cases.
 
-By age group, the population is predominantly 65+ (674 cases), followed by 41-64 (218), unknown (86), 18-40 (30), and 0-17 (16). By sex, cases are nearly even: 503 female, 493 male, 28 unknown. By country, the leading sources are the EU region (342), United Kingdom (278), and France (185), with the remainder spread across Canada, Italy, Germany, Spain, Poland, and Portugal.
+Among the cases with known sex, females accounted for 503 reports and males for 493 reports; sex was unknown for 28 cases. Reports originated from a range of countries, with the highest numbers from the European Union (342 cases), the United Kingdom (278 cases), and France (185 cases). Additional reports were received from Canada (55 cases), Italy (51 cases), Germany (33 cases), Spain (24 cases), Poland (18 cases), and Portugal (8 cases). Single‑case contributions were noted from Indonesia, China, Australia, and Finland, while other countries contributed between two and four cases. Sex or age information was not provided for a small number of cases from several of these jurisdictions.
 
 ## 4. Reaction / Adverse Event Analysis
 
-The most frequently reported reactions, at the MedDRA Preferred Term level, were Acute kidney injury (80), Drug ineffective (54), Hypotension (46), Drug interaction (42), and Dyspnoea (38). Restricted to serious cases only, the ranking is nearly identical, indicating reactions for this product are reported almost entirely in the context of serious cases.
+The most frequently reported preferred terms in the dataset were acute kidney injury (80 cases), drug ineffective (54 cases), hypotension (46 cases), drug interaction (42 cases), dyspnoea (38 cases), bradycardia (37 cases), dizziness (36 cases), fatigue (33 cases), off‑label use (31 cases), fall (30 cases), diarrhoea (30 cases), condition aggravated (27 cases), hypokalaemia (27 cases), asthenia (25 cases) and medication error (25 cases).  
 
-No System Organ Class field exists in the source data, only MedDRA Preferred Term. Reactions are therefore reported at the Preferred Term level only; SOC-level grouping was not attempted.
+Among the serious cases, the same preferred terms were most common, with acute kidney injury reported in 80 serious cases, drug ineffective in 53 serious cases, hypotension in 46 serious cases, drug interaction in 42 serious cases, dyspnoea in 38 serious cases, bradycardia in 37 serious cases, dizziness in 36 serious cases, fatigue in 33 serious cases, off‑label use in 31 serious cases, fall in 30 serious cases, diarrhoea in 30 serious cases, condition aggravated in 27 serious cases, hypokalaemia in 27 serious cases, asthenia in 25 serious cases and medication error in 25 serious cases.  
+
+The source data contain only MedDRA Preferred Terms; System Organ Class groupings are not available.
 
 | Reaction | Count |
 |---|---|
@@ -52,7 +54,16 @@ No System Organ Class field exists in the source data, only MedDRA Preferred Ter
 
 ## 5. Serious Cases / 15-Day Alerts
 
-1,023 cases met 15-day Alert (expedited) reporting criteria during the period. Within these, cases met one or more of the following seriousness criteria: other medically important (905), hospitalization (482), life-threatening (105), death (68), disabling (44), and congenital anomaly (7). These criteria are independent flags, not mutually exclusive, so a case may meet more than one and the breakdown does not sum to the total of 1,023.
+During the reporting period, a total of 1,023 alert cases were received. The seriousness criteria reported for these cases were:
+
+- Death: 68 cases  
+- Life‑threatening: 105 cases  
+- Hospitalization: 482 cases  
+- Disabling: 44 cases  
+- Congenital anomaly: 7 cases  
+- Other seriousness criteria: 905 cases  
+
+The seriousness criteria are independent yes/no flags; therefore, the individual counts are not mutually exclusive and do not sum to the total number of alert cases.
 
 | Criterion | Count |
 |---|---|
@@ -65,7 +76,7 @@ No System Organ Class field exists in the source data, only MedDRA Preferred Ter
 
 ## 6. Trends and Important Observations
 
-Case volume varied month to month across the 13-month reporting window rather than following a single steady trend. This is an observation of reporting volume over time, not a safety conclusion -- whether any month-to-month change is meaningful is a determination for a qualified human reviewer.
+The monthly case volume increased from 21 cases in December 2024 to 75 cases in January 2025. A further rise was observed in February 2025 with 94 cases, followed by a modest decline to 83 cases in March 2025. April 2025 recorded 78 cases, May 2025 80 cases, and June 2025 84 cases, indicating relatively stable volumes in the mid‑range of the period. July 2025 showed the highest count of the series with 109 cases. The volume then decreased to 64 cases in August 2025, rose to 76 cases in September 2025, and increased again to 102 cases in October 2025. November 2025 saw a reduction to 75 cases, and December 2025 returned to 83 cases. The pattern reflects fluctuations in case numbers across the 13‑month interval; the clinical relevance of these variations is for a human reviewer to assess.
 
 | Month | Cases |
 |---|---|
@@ -85,7 +96,7 @@ Case volume varied month to month across the 13-month reporting window rather th
 
 ## 7. History of Actions
 
-No history-of-actions data (labeling changes, safety studies, regulatory communications, or risk-minimization measures) was supplied for this reporting period. No actions are reported in this section.
+No history-of-actions data (such as labeling changes, studies, or regulatory communications) was supplied for this reporting period. Consequently, no actions can be described.
 
 ## 8. Case Index / Listing
 

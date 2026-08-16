@@ -1,21 +1,24 @@
 import json
 import os
 import urllib.request
+import urllib.error
 
-API_URL = "https://api.anthropic.com/v1/messages"
-MODEL = "claude-sonnet-4-6"
+API_URL = "https://api.groq.com/openai/v1/chat/completions"
+MODEL = "openai/gpt-oss-120b"
 
 
 def generate_section(system_prompt, user_prompt):
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY not set. Set it before running --online mode.")
+        raise RuntimeError("GROQ_API_KEY not set. Set it before running --online mode.")
 
     body = json.dumps({
         "model": MODEL,
-        "max_tokens": 600,
-        "system": system_prompt,
-        "messages": [{"role": "user", "content": user_prompt}],
+        "max_completion_tokens": 900,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
     }).encode("utf-8")
 
     req = urllib.request.Request(
@@ -23,14 +26,17 @@ def generate_section(system_prompt, user_prompt):
         data=body,
         headers={
             "Content-Type": "application/json",
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": "genar-challenge/1.0",
         },
         method="POST",
     )
 
-    with urllib.request.urlopen(req) as response:
-        result = json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode("utf-8")
+        raise RuntimeError(f"Groq API error {e.code}: {error_body}") from e
 
-    text_parts = [block["text"] for block in result["content"] if block["type"] == "text"]
-    return "\n".join(text_parts).strip()
+    return result["choices"][0]["message"]["content"].strip()
