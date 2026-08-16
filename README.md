@@ -7,7 +7,6 @@ Rule: every number in the report comes from Python, never from the AI.
 
 ```bash
 pip install pandas openpyxl
-cd src
 
 python report_generator.py              # generates 6 sections, queues for review
 python human_review.py list              # see what's pending
