@@ -3,6 +3,9 @@
 Takes raw adverse event data for Bisoprolol and generates a PADER report.
 Rule: every number in the report comes from Python, never from the AI.
 
+# Video Walkthrough 
+https://drive.google.com/file/d/1A6h6jTus5AYFJU0aWoG2ETue8OLbDSdt/view?usp=sharing
+
 ## Run it
 
 ```bash
