@@ -10,9 +10,7 @@ import llm_client
 
 PRODUCT_NAME = "Bisoprolol"
 
-# Offline text: same prompts above, run by hand through Claude since this
-# machine has no ANTHROPIC_API_KEY. --online mode calls the real API with
-# the exact same prompts if you have a key.
+
 OFFLINE_TEXT = {
     "narrative_summary": (
         "During the reporting period of 2024-12-27 to 2025-12-26, 1,024 cases involving "
